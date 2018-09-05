@@ -3,12 +3,10 @@
 namespace App\Http\Controllers;
 
 use App\Forms\VideoForm;
-use App\Videos;
+use App\Http\Models\Videos;
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\DB;
 use Kris\LaravelFormBuilder\FormBuilderTrait;
 use Kris\LaravelFormBuilder\FormBuilder;
-use Illuminate\Support\Facades\Redirect;
 
 class VideosController extends Controller
 {

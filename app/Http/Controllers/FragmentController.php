@@ -7,12 +7,10 @@ namespace App\Http\Controllers;
  * Time: 8:52 AM
  */
 use App\Forms\FragmentForm;
-use App\Fragment;
+use App\Http\Models\Fragment;
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\DB;
 use Kris\LaravelFormBuilder\FormBuilderTrait;
 use Kris\LaravelFormBuilder\FormBuilder;
-use Illuminate\Support\Facades\Redirect;
 
 class FragmentController extends Controller {
     use FormBuilderTrait;

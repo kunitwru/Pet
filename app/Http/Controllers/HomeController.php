@@ -1,8 +1,7 @@
 <?php
 
 namespace App\Http\Controllers;
-use App\Videos;
-use Illuminate\Http\Request;
+use App\Http\Models\Videos;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\View;
 use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;

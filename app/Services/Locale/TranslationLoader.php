@@ -2,7 +2,7 @@
 
 namespace App\Services\Locale;
 
-use App\Fragment;
+use App\Http\Models\Fragment;
 use Cache;
 use Illuminate\Translation\FileLoader;
 
@@ -19,9 +19,9 @@ class TranslationLoader extends FileLoader
      */
     public function load($locale, $group, $namespace = null)
     {
-//        if ($namespace !== null && $namespace !== '*') {
-//            return $this->loadNamespaced($locale, $group, $namespace);
-//        }
+        if ($namespace !== null && $namespace !== '*') {
+            return $this->loadNamespaced($locale, $group, $namespace);
+        }
         return Cache::remember("locale.fragments.{$locale}.{$group}", 6,
             function () use ($group, $locale) {
                 return Fragment::getGroup($group, $locale);
