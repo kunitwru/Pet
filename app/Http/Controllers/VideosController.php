@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Forms\VideoForm;
-use App\Http\Models\Videos;
+use App\Models\Videos;
 use Illuminate\Http\Request;
 use Kris\LaravelFormBuilder\FormBuilderTrait;
 use Kris\LaravelFormBuilder\FormBuilder;

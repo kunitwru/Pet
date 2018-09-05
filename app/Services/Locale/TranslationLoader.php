@@ -2,7 +2,7 @@
 
 namespace App\Services\Locale;
 
-use App\Http\Models\Fragment;
+use App\Models\Fragment;
 use Cache;
 use Illuminate\Translation\FileLoader;
 

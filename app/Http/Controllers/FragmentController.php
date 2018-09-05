@@ -7,7 +7,7 @@ namespace App\Http\Controllers;
  * Time: 8:52 AM
  */
 use App\Forms\FragmentForm;
-use App\Http\Models\Fragment;
+use App\Models\Fragment;
 use Illuminate\Http\Request;
 use Kris\LaravelFormBuilder\FormBuilderTrait;
 use Kris\LaravelFormBuilder\FormBuilder;
